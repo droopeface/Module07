@@ -168,7 +168,7 @@ body {
   padding: 25px;
 }
 
-.menu-info h3 {
+.menu-info h2 {
   font-size: 1.4rem;
   color: #1a1a1a;
   margin-bottom: 10px;
@@ -267,7 +267,7 @@ body {
   gap: 20px;
 }
 
-.eclub-text h3 {
+.eclub-text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   color: #ffffff;
