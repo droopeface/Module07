@@ -323,6 +323,14 @@ body {
   margin-top: 0;
   z-index: 10;
 }
+footer a {
+  color: #ffffff;
+  text-decoration: none; /* optional: removes the underline */
+}
+
+footer a:hover {
+  color: #d4a373; /* optional hover accent color */
+}
 @media screen and (max-width: 768px) {
   .nav-buttons a {
     color: #ffffff !important;
