@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Pen</title>
+  </head>
+  <body>
+<nav class="sticky-nav">
+  <div class="nav-container">
+    <!-- Image Logo hugging the left -->
+    <a href="#home" class="logo-link">
+      <img src="https://i.postimg.cc/L8t07hPM/uig-s-removebg-preview.png" alt="Luigi's Italian Restaurant Logo" class="nav-logo">
+    </a>
+    
+    <!-- Hidden checkbox for CSS-only mobile toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+
+    <div class="nav-buttons">
+      <a href="#home" class="btn">Home</a>
+      <a href="#menu" class="btn">Menu</a>
+      <a href="#story" class="btn">Our Story</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+
+    <!-- Right spacer to balance the flex layout -->
+    <div class="nav-spacer"></div>
+  </div>
+</nav>
+<!-- Hero Section -->
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to Luigi's Italian Restaurant</h1>
+        <p>Authentic Italian flavors, made fresh for you every day.</p>
+        <a href="#menu" class="cta-btn">View Menu</a>
+      </div>
+    </header>
+
+    <!-- Accent Bar -->
+    <div class="accent-bar">
+      <!-- Member's Club Section -->
+<section class="eclub-section">
+  <div class="eclub-container">
+    <div class="eclub-text">
+      <h3>Join Our Member's Club</h3>
+      <p>Sign up for exclusive news, special offers, and a free dessert!</p>
+    </div>
+    <form class="eclub-form">
+      <input type="email" placeholder="Email Address" required class="eclub-input">
+      <input type="text" placeholder="Zip Code" maxlength="5" class="eclub-input">
+      <button type="submit" class="eclub-btn">SUBMIT</button>
+    </form>
+  </div>
+</section>
+    </div>
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <div class="menu-container">
+    <h2 class="menu-title">Our Featured Menu</h2>
+    <p class="menu-subtitle">Explore our most-loved Italian classics, made fresh daily.</p>
+    
+    <div class="menu-grid">
+      <!-- Menu Item 1 -->
+      <div class="menu-card">
+        <img src="https://i.postimg.cc/CMv9Ny4w/leon-bredella-5-5tjqj-KNAI-unsplash.jpg" alt="Classic Italian Pasta" class="menu-img">
+        <div class="menu-info">
+          <h3>Handmade Fettuccine Alfredo</h3>
+          <p>Rich, creamy parmesan sauce tossed with freshly made fettuccine pasta.</p>
+          <span class="price">$16.99</span>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="menu-card">
+        <img src="https://i.postimg.cc/gJyLWqNJ/aurelien-lemasson-theobald-x00Cz-Bt4Dfk-unsplash.jpg" alt="Wood-Fired Pizza" class="menu-img">
+        <div class="menu-info">
+          <h3>Margherita Pizza</h3>
+          <p>Wood-fired crust topped with San Marzano tomatoes, fresh mozzarella, and basil.</p>
+          <span class="price">$14.50</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<footer>
+    <div id="Copyright">
+      <p>© 2026 Luigis Italian Restaurant All Rights Reserved.</p>
+      <p>
+        Connect with us: 
+        <a href="https://www.instagram.com/wtcc.web/" target="_blank" rel="noopener noreferrer">Instagram,</a>
+        <a href="https://x.com/waketechcc?lang=en" target="_blank" rel="noopener noreferrer">X/Twitter,</a>
+        <a href="https://www.facebook.com/waketechcc/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </p>
+    </div>
+</footer>
+  </body>
+</html>

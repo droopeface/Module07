@@ -1,0 +1,331 @@
+body {
+  
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.postimg.cc/c6qT6cff/glenov-brankovic-e4B5Av-A7Jqo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 613px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: #b22222;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #8b0000;
+}
+
+/* Sticky Navigation Bar Styles */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #EFDFC7;
+  color: white;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+  flex: 2;
+  justify-content: center;
+}
+
+
+.sticky-nav .btn {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.sticky-nav .btn:hover {
+  color: #d4a373;
+}
+
+
+.nav-toggle, .nav-toggle-label {
+  display: none;
+}
+
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-logo {
+  height: 90px;
+  width: auto;
+}
+.hero {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Menu Section Layout */
+.menu-section {
+  padding: 80px 20px;
+  background-color: #f9f6f0;
+  font-family: 'Playfair Display', serif;
+}
+
+.menu-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  color: #2c221e;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  font-size: 1.1rem;
+  color: #665;
+  margin-bottom: 50px;
+}
+
+/* Grid layout for menu cards */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Card Styling */
+.menu-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.menu-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  filter: contrast(1.05) saturate(1.1);
+  transition: filter 0.3s ease;
+}
+
+.menu-card:hover .menu-img {
+  filter: contrast(1.1) saturate(1.2);
+}
+
+/* Card Text & Price Styling */
+.menu-info {
+  padding: 25px;
+}
+
+.menu-info h3 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.menu-info p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #8b0000;
+}
+
+/* --- Responsive Media Query for Small Screens --- */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    padding: 1rem;
+  }
+
+  .nav-spacer {
+    display: none;
+  }
+
+  .nav-buttons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2b1d14;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 1rem;
+    flex: unset;
+  }
+
+ 
+  .nav-toggle-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #000000;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  position: relative;
+  content: '';
+}
+
+  .nav-toggle-label span::before {
+    top: -8px;
+  }
+
+  .nav-toggle-label span::after {
+    bottom: -11px;
+  }
+
+  .nav-toggle:checked ~ .nav-buttons {
+    display: flex;
+  }
+  @media screen and (max-width: 768px) {
+  .accent-bar {
+    padding: 120px 120px;
+  }
+}
+
+}
+.accent-bar {
+  background-color: #63212A;
+  width: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+.eclub-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.eclub-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.eclub-text p {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.eclub-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.eclub-input {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 200px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.eclub-btn {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.eclub-btn:hover {
+  background-color: #333;
+}
+
+  footer {
+  position: relative;
+  background-color: #332224;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  clear: both;
+  margin-top: 0;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .nav-buttons a {
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+}
